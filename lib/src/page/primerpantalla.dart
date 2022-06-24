@@ -39,18 +39,21 @@ class PrimerPantalla extends StatelessWidget {
                   icon: const Icon(Icons.arrow_back),
                 ),
               ),
-              Center(
-                child: SizedBox(
-                  width: width * 0.7,
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(50.0),
-                    child: Image.network(imageLink),
-                  ),
-                ),
-              ),
               Text(
                 recipeName,
                 style: TextStyle(fontSize: 23, height: 2.5),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 28.0),
+                child: Center(
+                  child: SizedBox(
+                    width: width * 0.7,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(50.0),
+                      child: Image.network(imageLink),
+                    ),
+                  ),
+                ),
               ),
               Card(
                 margin: EdgeInsets.all(15),
