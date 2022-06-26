@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyectoc2/src/Home/UI/Screen/home_view.dart';
 import 'package:proyectoc2/src/page/primerpantalla.dart';
 import 'package:proyectoc2/src/page/contador.dart';
 
@@ -12,7 +13,7 @@ class Principal extends StatelessWidget {
     return MaterialApp(debugShowCheckedModeBanner: false, routes: {
       "contador": (BuildContext context) =>
           Contador(), //la / es para definir la pantalla principal o bien la ruta inicial
-      "/": (BuildContext context) => PrimerPantalla()
+      "/": (BuildContext context) => HomeView()
     });
   }
 }
