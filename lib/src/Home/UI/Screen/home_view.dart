@@ -1,0 +1,30 @@
+import 'package:flutter/material.dart';
+
+class HomeView extends StatefulWidget {
+  HomeView({Key? key}) : super(key: key);
+
+  @override
+  State<HomeView> createState() => _HomeViewState();
+}
+
+class _HomeViewState extends State<HomeView> {
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        body: Column(
+          children: [
+            Row(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.arrow_back),
+                )
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
