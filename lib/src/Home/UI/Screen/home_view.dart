@@ -15,6 +15,7 @@ class _HomeViewState extends State<HomeView> with TickerProviderStateMixin {
     'Merienda',
     'Cena',
     'Postres',
+    'Ingredientes'
   ];
 
   final List<String> listRecipeOptions = [
@@ -27,6 +28,18 @@ class _HomeViewState extends State<HomeView> with TickerProviderStateMixin {
     'XXXX',
     'XXXX',
   ];
+
+  final List<String> listTextRecipeOptions = [
+    'Texto de la receta',
+    'Texto de la receta',
+    'Texto de la receta',
+    'Texto de la receta',
+    'Texto de la receta',
+    'Texto de la receta',
+    'Texto de la receta',
+    'Texto de la receta',
+  ];
+
   final List<String> listRecipeImages = [
     'http://del.h-cdn.co/assets/16/04/3200x1800/hd-aspect-1453934758-chicken-bacon-spaghetti-delish.jpg'
   ];
@@ -100,6 +113,11 @@ class _HomeViewState extends State<HomeView> with TickerProviderStateMixin {
                   width: 100,
                   height: 100,
                   child: Image.network(listRecipeImages[0])),
+              Padding(
+                  padding: EdgeInsets.only(left: 50),
+                  child: Text(
+                    listTextRecipeOptions[0],
+                  ))
             ],
           ),
         ),
